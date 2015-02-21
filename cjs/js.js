@@ -1,7 +1,7 @@
     $( document ).ready(function() {
-		$.getJSON("/php/json.php", function(data){
+		$.getJSON("php/json.php", function(data){
 			
-			var canvas =  new fabric.Canvas('logo');
+			var canvas =  new fabric.StaticCanvas('logo');
 		
 			fabric.Image.fromURL( data.layers[0], function(img) {
 			  var img1 = img.scale(0.7).set({ left: 10, top: 10 });
